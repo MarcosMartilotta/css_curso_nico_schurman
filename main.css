@@ -1,0 +1,77 @@
+body {
+    background-color: #eee; /*tambien puedo usar 3 letras*/
+}
+
+.caja {
+    margin: 8px; /*con esto creo un margen que separa mi caja de div de la caja superior que es body, pero este borde va por fuera del contenido de la etiqueta*/
+    padding: 8px; /*me agrega un borde pero por dentro de la caja, entonces todo lo que es color de fondo va a ser mas grande*/
+    border-style: solid; /* se pueden combinar arriba derecha inferior e izquierdaesta entre medio del margin y el padding, hay dash, dotted, double, groove*, gridch, inset, outset, none (viene por defecto), hiden (es oculto)*/
+    border-width: 8px;
+    border-color: #faa;
+    border-left: 6px solid #afa; /*modifica el borde izquierdo, pisando el anterior. Esto porque en css los navegadores toman las propiedades de arriba hacia abajo, o sea que toma la ultima que se le da*/
+    background-color: #aaf; 
+    border-radius: 4px;
+    height: 100px;
+    width: 100px;
+    color: #575;
+}
+/*El modelo de la caja entonces es un margen exterior o margin, 
+luego padding que es contenido de la caja y nos permite separarlo de los bordes, 
+border nos permite generar una separacion entre margin y pading y border-width nos permite seleccionar el ancho,
+ border color con el que puedo cambiar el color del mismo, y con border left top bottom o raigt puedo pisar 
+ el border y el radius sirve para redonear*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*el selector para las etiquetas de html tiene el mismo nombre en css*/
+/*
+body { /*Para asignarle estilo al body uso el selector de body
+    background-color: #eeeeee; para asignarle color al fondo se usa hexa y para el color de las letras tambien
+    color: #ff0000
+}
+*/
+/*id sirve para darle estilo a un elemento html en particular, mientras que las clases para darle a varios y que sea una composicion*/
+
+
+/*
+#parrafo { /*Se usa # para seleccionar un id que es un identificador unico que no debemos repetir
+    color: #ff0000;
+}
+
+.etiqueta {  Se usa el . para seleccionar una clase, las clases se usan mas porque si se repiten entre varios elementos html
+    color:#00aa00;
+}
+*/
