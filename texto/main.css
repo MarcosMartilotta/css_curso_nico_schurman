@@ -1,0 +1,23 @@
+body {
+    background-color: #eee;
+}
+
+p {
+    font-family: "Times new roman";
+    font-style: italic; /*oblique, etc*/
+    font-size: 20px; /*tambien se puede usar la unidad em que es una unidad relativa al tamaño por defecto que tienen las letras en el explorador*/
+    font-weight: 900;
+    color: #222ff2;
+    text-align: center; /*hay justify, left, right*/
+    text-indent: 40px;
+    line-height: 1.7; /*aumento la separación*/
+    word-spacing: 10px;
+    text-shadow: 5px 2px 2px rgba(0,0,0,0.3); /*el primero es cuanto se tiene que desplazar a la derecha, el otro hacia abajo, la tercera el disfuminado y despues rgba que sirve para dar el color con las 3 cifras y la cuarta la intensidad del mismo*/
+}
+
+a {
+    text-decoration: none; /*underline, overline, line-through*/
+    text-transform: uppercase; /*loercase, capitalize (la primera con mayuscula)*/
+    letter-spacing: 3px;
+
+}
