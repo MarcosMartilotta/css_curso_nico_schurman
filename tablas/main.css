@@ -2,24 +2,28 @@ body {
     background-color: #eee;
 }
 
-/*
-ul li { cuando quiero seleccionar un elemento que esta dentro de otro elemento lo selecciono así
-    list-style-type: disc; circle, lower alpha, etc.
-    background-color: #fff;
-    border: solid 1px #ddd;
-}
-*/
-
-ul {
-    list-style-type: none;
-    background-color: #fff;
-    border: solid 1px #ddd;
-    border-radius: 4px;
-    padding-left: 0px;
-    /*padding: 15px;*/
+table {
+    width: 100%; /*para que ocupe el completo de las pantalla*/
+    background-color: white;
+    border-collapse: collapse; /*para que elimine el espacio entre columnas*/
 }
 
-li {
-    border-bottom: solid 1px #ddd;
-    padding: 15px;
+tr:nth-child(even){ /*con esto indico que las filas even tengan ciertas propiedades que las odd no van a tenr*/
+    background-color: #f2f2f2;
 }
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
