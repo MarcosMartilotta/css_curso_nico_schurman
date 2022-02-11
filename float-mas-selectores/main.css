@@ -1,0 +1,16 @@
+body {
+    background-color: #eee;
+}
+
+img {
+    float: right; /*esto hace que la imagen flote a la derecha y que el texto  o lo que sea se acomode al otro lado de la imagen*/
+    opacity: 0.5; /*recbe valores de 0 a 1 */
+}
+
+img:hover{
+    opacity: 0.9; /*para que cuando le pasamos el mouse arriba se ponga un poco mas transparente*/
+}
+
+div p { /*indico padre e hijo en ese orden*/
+    color: #F00
+}

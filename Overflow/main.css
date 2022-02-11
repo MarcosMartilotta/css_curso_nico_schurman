@@ -1,0 +1,9 @@
+body {
+    background-color: #eee;
+}
+
+#over {
+    width: 100px;
+    height: 100px; /*El contenido se escapa de la caja*/
+    overflow: hidden; /*visible, hidden no podemos hacer scroll, scroll, auto agrega las barritas pero solo si las necesita, tambien tenemos el overflow para y o para x */
+}

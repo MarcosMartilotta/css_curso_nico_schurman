@@ -1,0 +1,14 @@
+body {
+    background-color: #eee;
+}
+
+p{
+    max-width: 350px; /*indica el ancho máximo que puede terner pero no lo fija, por lo tanto si achico la ventana este se va a achicar*/
+    /*si pongo width solo voy a tener scroll a la derecha porque lo fija*/
+    background-color: #f00;
+    margin: auto; /*te lo centra*/
+    position: relative; /*static, fixed deja el contenido fijo en la pantalla independiente de cuanto contenido exista, como esos menues que siemrpe estan a la izquierda*/
+    bottom: 0px;
+    rigth: 15px; /*es relativo a donde estaba*/
+
+}
