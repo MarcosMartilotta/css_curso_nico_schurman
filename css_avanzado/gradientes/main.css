@@ -1,0 +1,11 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    background-image: linear-gradient(to top right, red , #ccc); /*-45deg y asi para poner grados, poemos tambien poner un color entremedio o todos los que queramos, soporta rgba hsl etc.*/
+                        /*otra es reapiting linear gradient donde pasamos el color y un porcentaje de donde queremos que termine y con el otro lo -ms-ime-mode: ;*/
+
+    
+}
+

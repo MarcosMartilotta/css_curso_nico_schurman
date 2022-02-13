@@ -1,0 +1,10 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    background-color: rgba(0,0,0,0); /*0 100% transparente y 1 solido. el negro es la ausencia de todos los colores (o sea 0) y el blanco la presencia de todos, o sea 255*/
+    background-color: hsl(360, 60%, 70%, 0.5); /*aca el primero es el color, que va de 0 a 360, el segundo la saturacion, despues el brillo y por ultimo la transparencia*/
+    opacity: 0,3; /*con esta propiedad ponemos indicar la opacidad del elemento completo, no solo al fondo*/
+}
+

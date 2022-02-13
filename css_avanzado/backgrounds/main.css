@@ -1,0 +1,15 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    height: 400px;
+    background: hay que poner todas las propiedades en el orden de aca abajo para poder poner todo en esta linea, menos la de size ;
+    background-color: green;
+    background-image: url('https://placekitten.com/200/300');
+    background-repeat: no-repeat; /*aca podemos poner que sea en x o y tambien. porque la imagen se repite para llenar el fondo*/
+    background-position: center; /*hay combinaciones de right top, rigth bottom etc*/
+    background-attachment: fixed;
+    background-size: cover; /*esto sirve para hacer que la imagen se vea de forma natural y que cubra todo el fodno*/
+
+}
