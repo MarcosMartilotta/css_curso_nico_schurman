@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    /*transition: width 0.3s;*/
+    /*transform: rotate(20deg); /*hay que aplicarsela siempre a elementos display block*/
+                /*tambien se le puede pasar translate, scale(ancho, alto)*/
+    transition: 0.3s;
+    transition-delay: 0.3s;
+    }
+
+.box:hover {
+    /*transform: scaleY(2.05); /*para que solo crezca en Y*/
+    /*transform: skewY(-25deg); /*skew solo te inclina para el costado. Tambien podemos pasarle x,y directamente a skew*/
+    /*transform: rotateX(40deg); /*se esta acostando hacia atras, tambien puede ser rotateY, o Z*/
+    /*width: 150px; /*en box indicamos la transicion y aca hasta donde queremos que vaya*/
+    transform: scale(1.05,1.05);
+    background-color: rgba(0,0,0,0.1);
+}
