@@ -1,0 +1,29 @@
+body {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid; /*con inline la columna va a ser del mismo ancho que el contenido mas grande, sino ocupa toda la pantalla*/
+    /*grid-template-rows: minmax(100px,auto);
+    /*grid-template-rows: 50px 100px; /*altura de cada una de las filas, a la que no  le pongo queda automática*/
+    /*grid-template-columns: minmax(auto,50%) 1fr 3em; /*aca defino 3 columnas entonces todos mis datos se van a ajustar a 3 columnas*/
+                            /*TAMBIEN PODEMOS USAR 1FR 2FR 3FR lo que indica fracciones de la pantalla que quiero que usen las columnas*/
+    grid-template-rows: repeat(4, 50px); /*cantidad de filas y altura*/   
+    grid-template-columns: 30px repeat(3, 1fr) 15px; /*aca le digo que la primera sea de 30px las que siguen se dividan en tercios y la ultima sea de 15px*/
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-gao: 20px 10px; /*con esto puedo hacer lo mismo que arriba, en ese orden*/
+
+}
+
+.element {
+    background-color: red;
+}
+
+.header { /*con esta clase, que siempre tiene que estar a parte para un elemento, puedo asignarle que cantidad de columnas y filas quiero que ocupe tal elemento*/
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*grid-column y grid end sirven para poner inicio y final en una sola fina*/
+}

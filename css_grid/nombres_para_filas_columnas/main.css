@@ -1,0 +1,19 @@
+body {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid; /*con inline la columna va a ser del mismo ancho que el contenido mas grande, sino ocupa toda la pantalla*/
+    grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin];
+    grid-template-columns: [col-1-inicio] 1fr [col-2-start] 1fr [col-3-inicio] 1fr [col-4-fin] ;
+    grid-gap: 15px;
+}
+
+.element {
+    background-color: red;
+}
+
+.header { /*con esta clase, que siempre tiene que estar a parte para un elemento, puedo asignarle que cantidad de columnas y filas quiero que ocupe tal elemento*/
+   grid-column: col-1-inicio / col-4-fin;
+   grid-row: row-1-inicio / row-1-fin;
+}
