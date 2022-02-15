@@ -4,16 +4,29 @@ body {
 
 .grid {
     display: grid; /*con inline la columna va a ser del mismo ancho que el contenido mas grande, sino ocupa toda la pantalla*/
-    grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin];
-    grid-template-columns: [col-1-inicio] 1fr [col-2-start] 1fr [col-3-inicio] 1fr [col-4-fin] ;
-    grid-gap: 15px;
+                    /* grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin];
+                    grid-template-columns: [col-1-inicio] 1fr [col-2-start] 1fr [col-3-inicio] 1fr [col-4-fin] ;*/
+                    /*grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]);
+                    grid-template-columns: repeat(3, [col-inicio] 1fr [col-end]);
+                    grid-gap: 15px;*/
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px; /*como defini una grilla explicita todo lo que pongo abajo queda implicitamente definido pero tambien puedo darle comportamiento con estas instrucciones*/
+    grid-auto-flow: row; /*con esto cambio el flujo por defecto que es rows, lo puedo dejar en columns*/
+    justify-items: stretch; /*start es por defecto, esta end para poner a la derecha, center, esto hace que el contenido ocupe mas o menos, por ello si el color de fondo es uno, y le ponemos start solo se va a aplicar al elemento y no a toda la columna*/
+    align-items: stretch; /*stretch es basicamente para que ocupe todo*/
+    /*si quiero por ejemplo, alinear un solo elemento tengo que crear una nueva clase css y uar
+    justify-self para alinear horixontalmente e indicar cuanto quiero que ocupe, y align-self para vertical;*/
 }
 
-.element {
+.red {
     background-color: red;
 }
 
 .header { /*con esta clase, que siempre tiene que estar a parte para un elemento, puedo asignarle que cantidad de columnas y filas quiero que ocupe tal elemento*/
-   grid-column: col-1-inicio / col-4-fin;
-   grid-row: row-1-inicio / row-1-fin;
+   grid-column: col-inicio / col-fin 3;
+   grid-row: row-inicio / row-fin 3;
 }
