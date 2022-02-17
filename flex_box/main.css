@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    flex-flow: row wrap; /*con esta propiedad reumo las dos de arriba*/
+    height: 200px;
+    
+    
+    
+    
+    /*align-content: space-evenly; /*me mueve todo el contenido de mi contenedor flex dentro del contenedor padre de ese flex, en este caso del body*/
+    /*justify-content: space-evenly; /*nos permite alinear el contenido, tiene las mismas variantes que vimos antes*/
+    /*flex-wrap: wrap; /*envuelve el contenido y hace que no se escape, genrando una nueva fila pero en esta las columnas no necesariamente son iguales que arriba tambien esta wrap-reverse*/
+    /*flex-direction: row; /*row-reverse hace que el contenido se muestre de derecha a izquierda, column para columna y column reverse (pero column reverse lo deja en el lugar alrevez, no lo tira para abajo, solo pasa si el body del html es de 100%)*/
+    /*align-items: stretch; /*esta center crea una alineacion imaginaria con el box de la fila, etc etc*/
+}
+
+.red {
+    background-color: red;
+}
+
+.primero {
+    flex: 1 120px; /*con esta propiedad puedo hacer la de grow y basis toda en una sola fila*/
+    /*flex-grow: 1; /*les permite crecer de manera dinamica dependiendo de si tiene espacio, por defecto tiene el valor 0*/
+    /*flex-basis:; /*se usa para distribuir el contenido del elemento en conjunto con flexbox, le da un ancho inicial a nuestro elemento y despues el resto del contenido se ajusta al espacio que tiene disponible*/
+    /*order: 1; /*por defecto el order es 0, esto cambia el orden de los elementos. si todos tienen el mismo valor los pone segun se vayan escribiendo en  el html*/
+}
+
+.tercero{
+    flex-grow: 2;
+    align-self: flex-end; /*tiene varias*/
+}
